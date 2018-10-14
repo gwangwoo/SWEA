@@ -57,10 +57,8 @@ public class _swea_2112_보호필름 {
 		change(tmp,index,1);
 		dfs(tmp,index+1,cnt+1);
 		// 0으로 바꾸기.
-		for(int i = 0 ; i < D ; i++) {
-			for(int j = 0 ; j < W ; j++) {
-				tmp[i][j] = map[i][j];
-			}
+		for(int j = 0 ; j < W ; j++) {
+			tmp[index][j] = map[index][j];
 		}
 		change(tmp,index,0);
 		dfs(tmp,index+1,cnt+1);
